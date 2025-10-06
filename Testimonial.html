@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MobiSip — Testimonials</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Theme Styles -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #6b7280;
+      --accent-1: #4f46e5;
+      --accent-2: #06b6d4;
+      --card-shadow: 0 14px 40px rgba(79,70,229,0.08);
+    }
+
+    .dark {
+      --bg: #071029;
+      --surface: linear-gradient(180deg, rgba(11,18,32,0.6), rgba(8,12,20,0.8));
+      --text: #e6eef8;
+      --muted: #9aa9bf;
+      --accent-1: #7c82ff;
+      --accent-2: #4dd2e0;
+      --card-shadow: 0 18px 45px rgba(13, 28, 57, 0.35);
+    }
+
+    body {
+      font-family: 'Inter', system-ui;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.35s ease, color 0.35s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 1rem;
+      box-shadow: var(--card-shadow);
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .muted { color: var(--muted); }
+    .accent-text { color: var(--accent-1); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40" style="backdrop-filter: blur(6px);">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg" style="background:linear-gradient(135deg,var(--accent-1),var(--accent-2));"></div>
+        <span class="font-extrabold text-lg" style="color:var(--text)">Mobi<span style="color:var(--accent-2)">Sip</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html#home" class="muted">Home</a>
+        <a href="index.html#features" class="muted">Features</a>
+        <a href="index.html#apps" class="muted">Apps</a>
+        <a href="testimonial.html" class="muted text-indigo-500 font-semibold">Testimonials</a>
+        <a href="index.html#contact" class="muted">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="bg-gradient-to-r from-indigo-500 to-cyan-400 px-4 py-2 rounded-full text-sm font-semibold text-white shadow-lg">Request Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TESTIMONIALS -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <section id="testimonials" class="mt-10">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-3xl font-bold">Trusted by Leading Providers</h2>
+        <p class="muted max-w-2xl mx-auto mt-3">
+          Real results from businesses running mission-critical VoIP and Unified Communications on MobiSip.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="50">
+          <p class="italic muted mb-4">“Deployment velocity and reliability improved our uptime by 40%. MobiSip streamlined our onboarding for over 12,000 users.”</p>
+          <div class="font-semibold accent-text">— James Collins</div>
+          <div class="text-xs muted">CTO, GlobalComm</div>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
+          <p class="italic muted mb-4">“The APIs are incredibly clean and well-documented. Integration with our CRM and analytics platform was effortless.”</p>
+          <div class="font-semibold accent-text">— Sophia Turner</div>
+          <div class="text-xs muted">Head of Engineering, InnovateTel</div>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="150">
+          <p class="italic muted mb-4">“Our customers appreciate the unified experience. Call clarity and uptime have both exceeded expectations.”</p>
+          <div class="font-semibold accent-text">— David Chen</div>
+          <div class="text-xs muted">Operations Lead, MobileConnect</div>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
+          <p class="italic muted mb-4">“With MobiSip’s VoIP platform, we cut call drop rates by 60% and achieved seamless scalability across regions.”</p>
+          <div class="font-semibold accent-text">— Elena Vasquez</div>
+          <div class="text-xs muted">CEO, CloudVoice</div>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="250">
+          <p class="italic muted mb-4">“Call recording and live analytics have been a game changer. We can track call quality and optimize performance in real time.”</p>
+          <div class="font-semibold accent-text">— Robert Lewis</div>
+          <div class="text-xs muted">Director, NexaVoice</div>
+        </div>
+
+        <div class="card p-6" data-aos="fade-up" data-aos-delay="300">
+          <p class="italic muted mb-4">“The platform’s reliability and support are outstanding. It feels enterprise-grade yet simple enough for our SMB clients.”</p>
+          <div class="font-semibold accent-text">— Priya Nair</div>
+          <div class="text-xs muted">VP Technology, TelWave</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-8 mt-20 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 text-center muted text-sm">
+      <div class="mb-3">© 2024 MobiSip — All rights reserved.</div>
+      <div class="text-2xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-cyan-400 animate-pulse">
+        Powered By LMGInfotec
+      </div>
+          </div>
+  </footer>
+
+  <script>
+    // Init animations
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Auto dark mode (follows system preference)
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (prefersDark.matches) document.documentElement.classList.add('dark');
+    prefersDark.addEventListener('change', e => {
+      document.documentElement.classList.toggle('dark', e.matches);
+    });
+  </script>
+</body>
+</html>

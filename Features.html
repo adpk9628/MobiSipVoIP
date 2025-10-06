@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MobiSip — Platform Capabilities</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Theme Styles -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #6b7280;
+      --accent-1: #4f46e5;
+      --accent-2: #06b6d4;
+      --card-shadow: 0 14px 40px rgba(79,70,229,0.08);
+    }
+
+    .dark {
+      --bg: #071029;
+      --surface: linear-gradient(180deg, rgba(11,18,32,0.7), rgba(8,12,20,0.9));
+      --text: #e6eef8;
+      --muted: #9aa9bf;
+      --accent-1: #7c82ff;
+      --accent-2: #4dd2e0;
+      --card-shadow: 0 18px 45px rgba(13, 28, 57, 0.35);
+    }
+
+    body {
+      font-family: 'Inter', system-ui;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.35s ease, color 0.35s ease;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 1rem;
+      box-shadow: var(--card-shadow);
+      transition: transform .35s ease, box-shadow .35s ease;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(79,70,229,0.25);
+    }
+
+    /* ICON WRAPPER */
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 9999px;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 6px 18px rgba(79,70,229,0.25);
+    }
+
+    .icon-circle img {
+      width: 40px;
+      height: 40px;
+      filter: brightness(1.2) invert(1);
+    }
+
+    .muted { color: var(--muted); }
+    .accent-text { color: var(--accent-1); }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40" style="backdrop-filter: blur(6px);">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg" style="background:linear-gradient(135deg,var(--accent-1),var(--accent-2));"></div>
+        <span class="font-extrabold text-lg" style="color:var(--text)">Mobi<span style="color:var(--accent-2)">Sip</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html#home" class="muted">Home</a>
+        <a href="features.html" class="muted text-indigo-500 font-semibold">Features</a>
+        <a href="index.html#apps" class="muted">Apps</a>
+        <a href="testimonial.html" class="muted">Testimonials</a>
+        <a href="index.html#contact" class="muted">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="bg-gradient-to-r from-indigo-500 to-cyan-400 px-4 py-2 rounded-full text-sm font-semibold text-white shadow-lg">Request Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <section id="features" class="mt-10">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-3xl font-bold">Platform Capabilities</h2>
+        <p class="muted max-w-2xl mx-auto mt-3">
+          Everything needed to run a secure, high-performance, multi-tenant communications business powered by modern VoIP.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature Card -->
+        <div class="card" data-aos="fade-up">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Tenant Management"></div>
+          <h3 class="font-semibold text-lg mb-2">Tenant Management</h3>
+          <p class="muted text-sm">Fine-grained admin controls, onboarding, and provisioning for multiple business tenants.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/4264/4264716.png" alt="Programmable API"></div>
+          <h3 class="font-semibold text-lg mb-2">Programmable API</h3>
+          <p class="muted text-sm">Voice, SMS, and webhook APIs for integrations and automation.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" alt="Analytics"></div>
+          <h3 class="font-semibold text-lg mb-2">Analytics</h3>
+          <p class="muted text-sm">Real-time dashboards for call analytics, performance, and usage insights.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="HD Voice & Video"></div>
+          <h3 class="font-semibold text-lg mb-2">HD Voice & Video</h3>
+          <p class="muted text-sm">Crystal-clear HD calling and video conferencing with low latency.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Call Routing"></div>
+          <h3 class="font-semibold text-lg mb-2">Call Routing & IVR</h3>
+          <p class="muted text-sm">Flexible IVR menus and automated attendants to enhance customer experience.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1026/1026495.png" alt="SIP Trunking"></div>
+          <h3 class="font-semibold text-lg mb-2">SIP Trunking</h3>
+          <p class="muted text-sm">Connect to global carriers using SIP trunks for scalability and efficiency.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3064/3064194.png" alt="Security"></div>
+          <h3 class="font-semibold text-lg mb-2">Security & Encryption</h3>
+          <p class="muted text-sm">End-to-end encryption, SRTP, and TLS to protect communication data.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="700">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2989/2989988.png" alt="Multi-Device"></div>
+          <h3 class="font-semibold text-lg mb-2">Multi-Device Support</h3>
+          <p class="muted text-sm">Seamless continuity between mobile, desktop, and web apps.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="800">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3601/3601756.png" alt="QoS Monitoring"></div>
+          <h3 class="font-semibold text-lg mb-2">QoS & Network Monitoring</h3>
+          <p class="muted text-sm">Proactive quality metrics, latency tracking, and network insights.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-10 mt-16 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+      <div class="mb-3 text-gray-600 dark:text-gray-400">© 2024 MobiSip — All rights reserved.</div>
+      <div class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-cyan-400 mb-6 animate-pulse">
+        Powered By LMGInfotec
+      </div>
+          </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (prefersDark.matches) document.documentElement.classList.add('dark');
+    prefersDark.addEventListener('change', e => {
+      document.documentElement.classList.toggle('dark', e.matches);
+    });
+  </script>
+</body>
+</html>
